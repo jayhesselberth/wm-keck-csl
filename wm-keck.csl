@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>W.M. Keck Grant Application</title>
+    <id>http://www.github.com/jayhesselberth/wm-keck-csl</id>
+    <link rel="self" href="http://www.github.com/jayhesselberth/wm-keck-csl"/>
+    <author>
+      <name>Jay Hesselberth</name>
+      <email>jay.hesselberth@cuanschutz.edu</email>
+    </author>
+    <updated>2021-10-27T02:04:43+00:00</updated>
+  </info>
+  <citation sort-separator="; " cite-group-delimiter="; ">
+    <layout prefix="(" suffix=")">
+      <group>
+        <text variable="container-title" form="short" font-style="italic" suffix=" "/>
+        <text variable="volume" text-decoration="underline" suffix=": "/>
+        <choose>
+          <if match="any" variable="page">
+            <text variable="page" suffix=", "/>
+            <date date-parts="year" form="text" variable="issued"/>
+          </if>
+          <else>
+            <text variable="DOI"/>
+          </else>
+        </choose>
+      </group>
+    </layout>
+  </citation>
+  <bibliography/>
+</style>
